@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  train-and-deploy:
+  upload-model:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
@@ -21,11 +21,10 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Run Training
-        run: python src/components/training.py
+      # Skip training in CI/CD - Assume model is already trained locally
 
-      - name: Upload Model Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: model
-          path: artifacts/random_forest_model.pkl
+      - name: Upload Model to S3
+        run: python src/cloud/s3_connection.py
+
+      - name: Confirm Upload
+        run: echo "✅ Model uploaded to S3 successfully!"
