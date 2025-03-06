@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Prediction</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🌦 Weather Prediction 🌦</h1>
+        <form method="post" action="/predict">
+            <label>Summary: <input type="text" name="summary" required></label>
+            <label>Temperature (C): <input type="text" name="temperature" required></label>
+            <label>Apparent Temperature (C): <input type="text" name="apparent_temperature" required></label>
+            <label>Humidity: <input type="text" name="humidity" required></label>
+            <label>Wind Speed (km/h): <input type="text" name="wind_speed" required></label>
+            <label>Wind Bearing (degrees): <input type="text" name="wind_bearing" required></label>
+            <label>Visibility (km): <input type="text" name="visibility" required></label>
+            <label>Pressure (millibars): <input type="text" name="pressure" required></label>
+            <button type="submit">Predict</button>
+        </form>
+        
+        {% if prediction is not none %}
+            <div class="result">
+                <h2>Prediction: {{ prediction }}</h2>
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

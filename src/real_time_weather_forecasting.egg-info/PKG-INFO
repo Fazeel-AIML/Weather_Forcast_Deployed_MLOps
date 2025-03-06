@@ -23,6 +23,9 @@ Requires-Dist: dvc
 Requires-Dist: mlflow
 Requires-Dist: boto3
 Requires-Dist: pyyaml
+Requires-Dist: fastapi
+Requires-Dist: uvicorn
+Requires-Dist: python-multipart
 Dynamic: author
 Dynamic: author-email
 Dynamic: classifier

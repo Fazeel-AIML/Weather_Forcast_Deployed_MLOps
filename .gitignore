@@ -1,6 +1,7 @@
 venv
 notebooks
 logs
+artifacts
 .ipynb_checkpoints
 __pycache__
 *.pyc

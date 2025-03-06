@@ -10,3 +10,6 @@ dvc
 mlflow
 boto3
 pyyaml
+fastapi
+uvicorn
+python-multipart

@@ -10,6 +10,7 @@ src/components/evaluation.py
 src/components/model_building.py
 src/config/__init__.py
 src/config/config.py
+src/constants/__init__.py
 src/loggings/__init__.py
 src/loggings/exceptions.py
 src/loggings/logger.py
