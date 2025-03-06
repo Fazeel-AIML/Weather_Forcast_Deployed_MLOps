@@ -1,58 +1,91 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    text-align: center;
-    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
 }
 
 .container {
-    width: 400px;
-    margin: auto;
-    background: white;
+    max-width: 480px;
+    background: linear-gradient(145deg, #1e3c72, #2a5298);
     padding: 20px;
-    box-shadow: 0px 0px 10px gray;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5), -8px -8px 15px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
 }
 
-h1 {
-    color: #333;
+.container:hover {
+    transform: scale(1.05);
+}
+
+h1, .result h2 {
+    color: #fff;
+    text-shadow: 2px 2px 12px rgba(255, 255, 255, 0.3);
 }
 
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-label {
-    margin-top: 10px;
-    font-weight: bold;
+input, button {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+    text-align: center;
+    box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.2), inset -4px -4px 8px rgba(255, 255, 255, 0.1);
 }
 
 input {
-    padding: 8px;
-    margin: 5px 0;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background: #2a5298;
+    color: #fff;
+    border: none;
+}
+
+input:focus {
+    outline: none;
+    background: #1e3c72;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.4);
 }
 
 button {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #007BFF;
-    color: white;
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    color: #fff;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    font-weight: bold;
+    box-shadow: 4px 4px 10px rgba(0, 123, 255, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.1);
 }
 
 button:hover {
-    background-color: #0056b3;
+    background: linear-gradient(145deg, #0056b3, #004080);
+    box-shadow: 6px 6px 12px rgba(0, 123, 255, 0.5);
+}
+
+.train-button {
+    background: linear-gradient(145deg, #28a745, #218838);
+    margin-top: 15px;
+    box-shadow: 4px 4px 10px rgba(40, 167, 69, 0.3), -4px -4px 10px rgba(255, 255, 255, 0.1);
 }
 
 .result {
     margin-top: 20px;
-    padding: 10px;
-    background-color: #dff0d8;
-    color: #3c763d;
-    border-radius: 5px;
+    padding: 12px;
+    background: linear-gradient(145deg, #0056b3, #007bff);
+    border-radius: 8px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3), -4px -4px 12px rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+    .container { width: 90%; }
+    h1 { font-size: 20px; }
+    input, button { font-size: 14px; }
 }
