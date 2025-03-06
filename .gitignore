@@ -1,6 +1,7 @@
 venv
 notebooks
 logs
+aws_cred.txt
 artifacts
 .ipynb_checkpoints
 __pycache__
