@@ -1,0 +1,33 @@
+Metadata-Version: 2.2
+Name: real_time_weather_forecasting
+Version: 0.1.0
+Summary: A real-time weather forecasting system using MLOps principles
+Home-page: https://github.com/Fazeel-AIML/Weather_Forcast_Deployed_MLOps.git
+Author: Fazeel Asghar
+Author-email: fasghar@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+Requires-Dist: requests
+Requires-Dist: flask
+Requires-Dist: gunicorn
+Requires-Dist: dvc
+Requires-Dist: mlflow
+Requires-Dist: boto3
+Requires-Dist: pyyaml
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary

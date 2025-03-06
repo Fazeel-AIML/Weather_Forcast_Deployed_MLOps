@@ -1,0 +1,17 @@
+venv
+notebooks
+logs
+artifacts
+.ipynb_checkpoints
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*.pyw
+*.pyz
+*.pywz
+*.ipynb
+*.log
+build
+dist
+myenv
