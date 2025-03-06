@@ -7,7 +7,7 @@ def read_requirements():
         with open("requirements.txt") as f:
             return f.read().splitlines()
     return []  # Return empty list if file is missing
-print("Setup started")
+print("Setup  started")
 setup(
     name="real_time_weather_forecasting",
     version="0.1.0",
