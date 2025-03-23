@@ -5,7 +5,6 @@ A brief description of your project goes here. For example:
 
 ## Table of Contents
 - [Project Overview](#project-overview)
-- [Directory Structure](#directory-structure)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
@@ -48,4 +47,8 @@ Before you begin, ensure you have the following installed:
 To run:
   ```bash
   python main.py
+
+
+---
+
    
