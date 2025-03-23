@@ -7,12 +7,6 @@ A brief description of your project goes here. For example:
 - [Project Overview](#project-overview)
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Training the Model](#training-the-model)
-- [CI/CD Pipeline](#cicd-pipeline)
-- [Deployment](#deployment)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project Overview
 
